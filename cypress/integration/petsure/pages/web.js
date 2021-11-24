@@ -1,5 +1,3 @@
-///<reference types="cypress"/>
-
 class Web {
 
     visitPetsureAndAcceptCookies() {
@@ -21,6 +19,22 @@ class Web {
         }
         cy.clickContinue()
     }
+
+    selectGenderAndBirthday(PET_GENDER, DOB_DATE, DOB_MONTH, DOB_YEAR) {
+        cy.get('#day').type(DOB_DATE)
+        cy.get('#month').type(DOB_MONTH)
+        cy.get('#year').type(DOB_YEAR)
+
+        if (PET_GENDER = 'male') {
+            cy.get(':nth-child(2) > label > .radio-text').click()
+        }
+        else if (PET_GENDER = 'female') {
+            cy.get(':nth-child(3) > label > .radio-text').click()
+        }                
+
+        cy.clickContinue()
+    }
+
 
 }
 

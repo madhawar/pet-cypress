@@ -16,6 +16,8 @@ describe('Petsure', function () {
     it('E2E', function () {
         web.enterPetName(this.pets.name)
         web.selectPet('cat')
+        web.selectGenderAndBirthday('male', '14', '09', '2020')
     })
+    
 })
 
