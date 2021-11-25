@@ -14,9 +14,9 @@ describe('Petsure', function () {
     }) 
 
     it('E2E', function () {
-        web.enterPetName(this.pets.name)
-        web.selectPet('cat')
-        web.selectGenderAndBirthday('male', '14', '09', '2020')
+        web.enterPetName(this.pets.name)        
+        web.selectPet(this.pets.type)
+        web.selectGenderAndBirthday(this.pets.gender, this.pets.dob_day, this.pets.dob_month, this.pets.dob_year)
     })
     
 })

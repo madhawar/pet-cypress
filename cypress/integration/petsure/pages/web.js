@@ -35,6 +35,12 @@ class Web {
         cy.clickContinue()
     }
 
+    selectBreed() {
+        cy.get(':nth-child(2) > label > .radio-text')
+        cy.get(':nth-child(3) > label > .radio-text')
+        cy.get(':nth-child(4) > label > .radio-text')
+    }
+
 
 }
 

@@ -18,14 +18,3 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-Cypress.Screenshot.defaults({
-    screenshotOnRunFailure: false
-})
-  
-Cypress.Cookies.defaults({
-    // preserve: 'JSESSIONID'
-})
-  
-// Cypress.on('uncaught:exception', (err, runnable) => {
-//     return false
-// })
