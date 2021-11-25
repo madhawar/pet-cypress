@@ -23,6 +23,6 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-Cypress.Commands.add('clickContinue', function () {
+Cypress.Commands.add('clickContinue', () => {
   cy.get('#submit').click()
 })
