@@ -7,7 +7,7 @@ class Web {
 
     enterPetName(PET_NAME) {
         cy.get('#petName').type(PET_NAME)
-        cy.clickContinue()
+        cy.clickContinue()        
     }
 
     selectPet(PET_TYPE) {
