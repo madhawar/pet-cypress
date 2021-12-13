@@ -35,10 +35,21 @@ class Web {
         cy.clickContinue()
     }
 
-    selectBreed() {
-        cy.get(':nth-child(2) > label > .radio-text')
-        cy.get(':nth-child(3) > label > .radio-text')
-        cy.get(':nth-child(4) > label > .radio-text')
+    selectBreed(PET_TYPE, PET_BREED) {
+        if(PET_TYPE = "cat") {
+            switch (PET_BREED) {
+                case "pedigree":
+                    cy.get(':nth-child(2) > label > .radio-text').click()
+                case "moggie":
+                    cy.get(':nth-child(3) > label > .radio-text').click()
+                case "other":   
+                    cy.get(':nth-child(4) > label > .radio-text').click()
+            }                                  
+        }
+        else if(PET_TYPE = "dog") {
+            
+        }
+        
     }
 
 

@@ -1,8 +1,9 @@
 {
-    "name": "Togo",
+    "name": "Kitty",
     "type": "cat",
     "dob_day": "14",
     "dob_month": "09",
     "dob_year": "2020",
-    "gender": "male"
+    "gender": "male",
+    "breed": "moggie"
 }
